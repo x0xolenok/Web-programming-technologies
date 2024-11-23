@@ -1,0 +1,49 @@
+﻿body
+{
+    width: 1500px;
+    margin: 0;
+}
+
+#header
+{
+    background-color: #0099FF;
+    text-align: center;
+    height: 70px;
+    font-size: 30px;
+}
+
+#menu
+{
+    font-size: 24px;
+    float: left;
+    width: 250px;
+    height: 300px;
+    background-color: #888888;
+    text-align: center;
+}
+
+#menu_header
+{
+    border-bottom: 1px solid white;
+}
+
+#menu ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li a
+{
+    color: blueviolet;
+}
+
+#footer
+{
+    line-height: 40px;
+    height: 40px;
+    background-color: #0099FF;
+    font-size: 24px;
+    clear: both;
+}

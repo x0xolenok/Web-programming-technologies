@@ -1,0 +1,65 @@
+﻿.Logo
+{
+	text-align: center;
+	background-color: #0099FF;
+	height: 40px;
+}
+
+.Main_menu
+{
+	float: left;
+	height: 250px;
+	width: 200px;
+	text-align: center;
+	background-color: #888888;
+	border-bottom: 2px solid #000000;
+}
+
+.Table
+{
+	height: 353px;
+	width: 800px;
+	/*margin: 203px;*/
+}
+
+.TableTitle
+{
+	text-align: center;
+}
+
+table.MyTable
+{
+	/*border-collapse: collapse;*/
+	border: 3px solid black;
+	text-align: center;
+	border-spacing: 0px 0px;
+}
+
+table.MyTable th
+{
+	border: 1px solid black;
+}
+
+table.MyTable td
+{
+	border: 1px solid black;
+}
+
+table.MyTable td.Back
+{
+	background-color: #00FFFF;
+}
+
+.Footer
+{
+	background-color: #0099FF;
+	height: 23px;
+	text-align: left;
+}
+
+.Main2
+{
+	height: 153px;
+	width: 270px;
+	/*margin: 203px;*/
+}

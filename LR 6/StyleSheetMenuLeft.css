@@ -1,0 +1,93 @@
+﻿div p.Title
+{
+	text-align: center;
+	background-color: white;
+	margin: 0;
+}
+
+div.LB
+{
+  	border-top: 1px;
+	border-bottom: 1px;
+	width: 150px;
+	height: 300px;
+	background-color: #178A91;
+	float: left;
+}
+
+div.LB a
+{
+	text-decoration: none;
+	display: block;
+}
+
+div.LB UL
+{
+	list-style: none;
+	margin-left: -10px;
+	padding: 0;
+}
+
+.LeftMenu > LI
+{
+	display: block;
+	position: relative;
+	text-align: left;
+	width: 100px;
+	height: 27px;
+	line-height: 27px;
+	margin-left: 25px;
+	border-bottom: 1px double white;
+}
+
+.LeftMenu a:hover
+{
+	background-color: white;
+}
+
+.LeftMenu > LI > a
+{
+	color: #000;
+}
+
+.LeftMenu_sub
+{
+	position: absolute;
+	background-color: #178A91;
+	width: 80px;
+	left: 100px;
+	visibility: hidden;
+	opacity: 0; 
+	z-index: 10;
+}
+
+UL.LeftMenu_sub
+{
+	position: relative;
+	top: -27px;
+    border: 2px solid white;
+}
+
+.LeftMenu_sub LI
+{
+	position: relative;
+	margin: 0px;
+}
+
+.LeftMenu_sub a
+{
+	background-color: #178A91;
+	color: #000;
+	text-align: center;
+}
+
+.LeftMenu_sub a:hover
+{
+	background-color: #fff;
+}
+
+div.LB LI:hover > .LeftMenu_sub
+{
+  visibility: visible;
+  opacity: 1;
+}

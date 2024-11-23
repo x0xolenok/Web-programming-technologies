@@ -1,0 +1,90 @@
+﻿body
+{
+    display: block;
+    width: 600px;
+    border-right: 3px solid #000000;
+}
+
+page
+{
+    display: block;
+    margin: 40px 40px 80px 40px;
+}
+
+border
+{
+    clear: both;
+    display: block;
+    border-bottom: 3px double #000000;
+}
+
+ph1
+{
+    margin-left:5px;
+    display:block;
+    float:left;
+}
+
+ph2
+{
+    margin-right:5px;
+    display: block;
+    float: right;
+}
+
+img
+{
+    display: block;
+    height: 400px;
+    background: url(pic.png) center no-repeat;
+}
+
+caption
+{
+    padding-top:370px;
+    display:block;
+    font-style:oblique;
+    text-align:center;
+}
+
+br
+{
+    display:block;
+    margin-bottom:20px;
+}
+
+p
+{
+    display: block;
+}
+
+a
+{
+    display:inline;
+    font-weight:bold;
+}
+
+center
+{
+    display:block;
+    text-align:center;
+}
+
+nextpage
+{
+    display:block;
+    border-bottom: 3px solid #000000;
+    margin-bottom: 10px;
+}
+
+light
+{
+    font-family:Courier New, Courier, monospace;
+    font-size:13px;
+}
+
+pre
+{
+    display:block;
+    white-space:pre-wrap;
+}

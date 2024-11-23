@@ -1,0 +1,21 @@
+﻿<!ELEMENT body (nextpage|page)*>
+<!ATTLIST body xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance">
+<!ATTLIST body xsi:noNamespaceSchemaLocation CDATA #FIXED "Pr.xsd">
+
+<!ELEMENT page (header,(img|br|p|pre)*)>
+<!ELEMENT nextpage EMPTY>
+
+<!ELEMENT header (ph1,ph2,border)>
+
+<!ELEMENT ph1 (#PCDATA)>
+<!ELEMENT ph2 (#PCDATA)>
+<!ELEMENT border EMPTY>
+
+<!ELEMENT img (caption?)>
+<!ELEMENT br EMPTY>
+<!ELEMENT p (#PCDATA|a|light|center)*>
+<!ELEMENT pre (#PCDATA|a|light|center)*>
+<!ELEMENT caption (#PCDATA)>
+<!ELEMENT a (#PCDATA|light|center)*>
+<!ELEMENT light (#PCDATA|a|center)*>
+<!ELEMENT center (#PCDATA|a|light)*>

@@ -1,0 +1,14 @@
+﻿#content
+{
+    position: relative;
+    left: 250px;
+    top: -340px;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.border
+{
+    width: 1240px;
+    border-bottom: 1px solid black;
+}

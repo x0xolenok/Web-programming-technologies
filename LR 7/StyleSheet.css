@@ -1,0 +1,49 @@
+body
+{
+	background-image: url('fon009.png');
+	min-width: 600px;
+}
+
+.Footer, .Logo
+{
+	border: 1px;
+	background: #3399FF;
+	margin: 3px;
+}
+
+.Left
+{
+	width: 20%;
+	float: left;
+	margin-left: 10px;
+}
+
+.Right
+{
+	width: 20%;
+	float: right;
+	margin-right: 10px;
+}
+
+.Main
+{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.Main, .Left, .Right
+{
+	height: 100px;
+	background: #EFEFF2;
+	border: 1px solid #3D82D4;
+	border-radius: 10px;
+	text-align: justify;
+	line-height: 150%;
+}
+
+.Header
+{
+	text-align: center;
+	background-color: #3399FF;
+	border-radius: 9px 9px 0 0;
+}

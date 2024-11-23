@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='ru-RU'>
+<head>
+    <meta charset="utf-8">
+    <title>canvas + FileReader</title>
+
+    <script src="PageLogic.js"></script>
+</head>
+
+<body style="background: grey">
+    <span>Розмір вікна виводу графіки 500х500. Початок координат верхній лівий кут.</span>
+
+    <hr/>
+
+    <div>
+        <span>x:</span>
+        <input type="number" id="fileStartPointX" name="fileStartPointX" value="150">
+        <span>y:</span>
+        <input type="number" id="fileStartPointY" name="fileStartPointY" value="150">
+    </div>
+
+    <div>
+        <span>Файл координат:</span>
+        <input id="file" type="file" name="file">
+    </div>
+
+    <hr/>
+
+    <div>
+        <span>x:</span>
+        <input type="number" name="textStartPointX" value="150">
+        <span>y:</span>
+        <input type="number" name="textStartPointY" value="150">
+        <span>text:</span>
+        <input type="text" name="text" value="Text">
+        <button id="outputText">Вивести текст</button>
+        <button id="flushCanvas">Очистити</button>
+    </div>
+
+    <hr/>
+
+    <canvas id="output" width="500" height="500" style="border: 3px solid black"></canvas>
+
+</body>
+</html>

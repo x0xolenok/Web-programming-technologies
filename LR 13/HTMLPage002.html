@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Receive</title>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded",
+            () => {
+                let urlParams = new URLSearchParams(window.location.search);
+
+                document.querySelector("#surnameOutput").innerText =
+                    urlParams.get("surname").length ? urlParams.get("surname") : "unstated";
+
+                document.querySelector("#postOutput").innerText =
+                    urlParams.get("post");
+            }
+        );
+    </script>
+</head>
+
+<body>
+<main class="page-wrapper" style="width: 60%; font-size: 1.5em">
+    <div style="text-align: center">
+			<span>
+				Що викликає сторінка передала наступне:
+			</span>
+    </div>
+
+    <table border="1" width="100%" summary="Що викликає сторінка передала наступне:">
+        <tr>
+            <td>Прізвище:</td>
+            <td id="surnameOutput"></td>
+        </tr>
+        <tr>
+            <td>Посада:</td>
+            <td id="postOutput"></td>
+        </tr>
+    </table>
+</main>
+</body>
+</html>

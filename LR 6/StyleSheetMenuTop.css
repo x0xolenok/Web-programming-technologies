@@ -1,0 +1,85 @@
+﻿div.Menu
+{
+	background: #178A91;
+	border-top: 3px double white;
+	border-bottom: 3px double white;
+}
+
+div.Menu a
+{
+	text-decoration: none;
+	display: block;
+}
+
+div.Menu UL
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.TopMenu > LI
+{
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	width: 100px;
+	height: 27px;
+	line-height: 27px;
+}
+
+.TopMenu a:hover
+{
+	background-color: white;
+}
+
+.TopMenu > LI > a
+{
+	color: #000;
+}
+
+.TopMenu_sub
+{
+	position: absolute;
+	background-color: #178A91;
+	width: 100px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 5;
+}
+
+UL.TopMenu_sub
+{
+    border: 2px solid white;
+}
+
+.TopMenu_sub LI
+{
+	position: relative;
+	margin: 0px;
+}
+
+.TopMenu_sub a
+{
+	background-color: #178A91;
+	color: #000;
+	text-align: center;
+}
+
+.TopMenu_sub a:hover
+{
+	background-color: #fff;
+}
+
+.TopMenu_sub .TopMenu_sub
+{
+	position: absolute;
+	top: 0;
+	left: 100px;
+}
+
+div.Menu LI:hover > .TopMenu_sub
+{
+	visibility: visible;
+	opacity: 1;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Send</title>
+</head>
+
+<body style="padding: 20px; font-size: 1.5em">
+<main class="page-wrapper" style="width: 50%">
+    <div style="background-color: aqua; text-align: center">
+        <span>Форма вводу данних:</span>
+    </div>
+
+    <form method="get" action="HTMLPage002.html">
+        <div>
+            <h3 style="margin: 0.5em 0.5em 0.5em 0;">Введіть данні: </h3>
+
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px">
+                <label for="surname">Прізвище:</label>
+                <input type="text" name="surname" id="surname" placeholder="Прізвище">
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px">
+                <label for="post">Посада:</label>
+                <select name="post" id="post">
+                    <option value="Аналітик">Аналітик</option>
+                    <option value="Економіст">Економіст</option>
+                    <option value="Бухгалтер">Бухгалтер</option>
+                    <option value="Програміст">Програміст</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit">Відправка</button>
+    </form>
+</main>
+</body>
+</html>

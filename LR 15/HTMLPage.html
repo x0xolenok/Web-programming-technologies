@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="PageLogic.js"></script>
+</head>
+
+<body style="background: grey">
+
+    <div>
+        <button id="Sin">Sin</button>
+        <button id="Cos">Cos</button>
+        <button id="Tan">Tan</button>
+    </div>
+
+    <hr/>
+
+    <canvas id="graph" width="500" height="500"></canvas>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let canvas = document.getElementById('graph');
+            let context = canvas.getContext('2d');
+            let width = canvas.width;
+            let height = canvas.height;
+
+            document.querySelector("button#Sin").addEventListener("click", () => {
+                buildFunction(Math.sin, -width / 2, width / 2, 40);
+            }, false);
+
+            document.querySelector("button#Cos").addEventListener("click", () => {
+                buildFunction(Math.cos, -width / 2, width / 2, 40);
+            }, false);
+
+            document.querySelector("button#Tan").addEventListener("click", () => {
+                buildFunction(Math.tan, -width / 2, width / 2, 40);
+            }, false);
+
+            function buildFunction(func, startX, endX, coef) {
+                context.clearRect(0, 0, width, height);
+
+                for (let i = startX; i < endX; i++) {
+                    drawLine(context, width / 2 + i, height / 2 - func(1 / coef * i) * coef,
+                        width / 2 + i + 1, height / 2 - func(1 / coef * (i + 1)) * coef);
+                }
+            }
+
+            function drawLine(context, xStart, yStart, xEnd, yEnd) {
+                context.beginPath();
+                context.moveTo(xStart, yStart);
+                context.lineTo(xEnd, yEnd);
+                context.strokeStyle = 'black';
+                context.stroke();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+

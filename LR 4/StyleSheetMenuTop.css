@@ -1,0 +1,17 @@
+﻿UL.TopMenu LI.FR, LI.Itm, LI.LST
+{
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px;
+}
+
+UL.TopMenu a
+{
+	text-decoration: none;
+	color: Black;
+}
+
+UL.TopMenu LI.FR:hover, LI.Itm:hover, LI.LST:hover
+{
+	background-color: White;	
+}

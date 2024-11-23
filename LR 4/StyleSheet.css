@@ -1,0 +1,105 @@
+﻿body
+{
+	width: 1000px;
+	height: 700px; /*624px;*/
+}
+
+.Logo
+{
+	text-align: center;
+	width: 1000px;
+	height: 50px;
+	background-color: #178A91;
+	border-top: 1px solid grey;
+}
+
+.Menu
+{
+	width: 1000px;
+	height: 31px;
+	border-top: 3px double white;
+	border-bottom: 3px double white;
+	background-color: #178A91;
+}
+
+.LB
+{
+	float: left;
+	width: 150px;
+	height: 300px;
+	background-color: #178A91;
+}
+
+.RB
+{
+	float: right;
+	width: 150px;
+	height: 300px;
+	background-color: #178A91;
+}
+
+.Main
+{
+	width: 700px;
+	height: 500px;
+	background-color: #C0C0C0;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Footer
+{
+	width: 1000px;
+	height: 30px;
+	background-color: #178A91;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.LB p.Title
+{
+	text-align: center;
+	background-color: White;
+	margin-bottom: 15px;
+}
+
+.RB p.Title
+{
+	text-align: center;
+	background-color: Red;
+	margin-bottom: 15px;
+}
+
+.Main p.Title
+{
+	text-align: center;
+	background-color: Gray;
+	margin-bottom: 15px;
+}
+
+.Logo p.Title
+{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.Footer p.Title
+{
+	padding-top: 5px;
+}
+
+.RB p.Text
+{
+	padding-top: 100px;
+	text-align: center;
+}
+
+.Main p.Text
+{
+	padding-top: 200px;
+	text-align: center;
+}
